@@ -10,6 +10,7 @@ import {
 
 import First from './App/First';
 import Second from './App/Second';
+import Bar_Bleu from './App/Bar_Bleu';
 
 export default class reactnativeapp extends Component {
   renderScene(route, navigator){
@@ -18,6 +19,9 @@ export default class reactnativeapp extends Component {
     }
     if(route.name == 'Second'){
         return <Second navigator={navigator}/>
+    }
+    if(route.name == 'Bar_Bleu'){
+        return <Bar_Bleu navigator={navigator}/>
     }
   }
   render() {

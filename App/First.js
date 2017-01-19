@@ -21,7 +21,7 @@ class First extends Component{
                         source={{url: 'https://facebook.github.io/react/img/logo_og.png'}}
                     />
                     <View style={{paddingTop: 20}}>
-                        <Text style = {styles.white}> React Native</Text>
+                        <Text style = {styles.white}> PSU Bars</Text>
                     </View>
                     <View style={{paddingTop: 10}}>
                         <TouchableHighlight onPress={this.navigate.bind(this, 'Second')} style={styles.button}>
