@@ -28,7 +28,13 @@ export default class reactnativeapp extends Component {
     return (
       <Navigator
         initialRoute={{ name: 'First'}}
-        renderScene={this.renderScene.bind(this)}
+        renderScene={this.renderScene}
+   configureScene={(route) => {
+       if (route.sceneConfig) {
+           return route.sceneConfig;
+       }
+       return Navigator.SceneConfigs.HorizontalSwipeJump;
+   }}
       />
     );
   }
